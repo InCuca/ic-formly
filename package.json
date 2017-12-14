@@ -1,0 +1,44 @@
+{
+  "name": "ic-formly",
+  "version": "0.0.1",
+  "description": "This component is a form with validation and more using only javascript objects",
+  "author": "Walker Leite <walker@incuca.com.br>",
+  "main": "dist/ic-formly.min.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/**/*.vue",
+    "build": "poi build --format cjs",
+    "build:umd": "poi build --format umd",
+    "build:doc": "vue-styleguidist build",
+    "serve": "vue-styleguidist server",
+    "test": "poi test",
+    "test:watch": "poi test --watch",
+    "test:cov": "poi test --coverage"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "vue": "^2.5.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-plugin-vue": "beta",
+    "karma-chai": "^0.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-phantomjs-shim": "^1.5.0",
+    "node-glob": "^1.2.0",
+    "poi": "^9.5.2",
+    "poi-preset-karma": "^9.2.1",
+    "typescript": "^2.6.1",
+    "vue-styleguidist": "^1.3.3",
+    "vue-webpack-loaders": "^1.0.6",
+    "webpack": "^3.1.0"
+  }
+}
