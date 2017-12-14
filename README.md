@@ -15,6 +15,25 @@ $ npm run build
 import IcFormly from 'dist/ic-formly';
 
 Vue.component('ic-formly', IcFormly);
+
+let duckModel = {
+  duck: {
+    name: 'Charlie',
+    specie: 'Mountain Duck'
+  }
+};
+
+let duckFields = [
+  {
+    key: 'duck.name',
+    type: 'input',
+    required: true
+  }, {
+    key: 'duck.specie',
+    type: 'input',
+    required: true
+  }
+];
 ```
 
 ```html
