@@ -1,5 +1,5 @@
 {
-  "name": "@incuca/ic-formly",
+  "name": "ic-formly",
   "version": "0.0.2",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
