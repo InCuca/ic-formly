@@ -1,5 +1,5 @@
 {
-  "name": "ic-formly",
+  "name": "@incuca/ic-formly",
   "version": "0.0.1",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
@@ -23,10 +23,14 @@
     "dist/"
   ],
   "dependencies": {
-    "vue": "^2.5.3"
+    "flat": "^4.0.0",
+    "vue": "^2.5.3",
+    "vue-formly": "^2.5.3",
+    "vue-formly-bootstrap": "^2.3.0"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-stage-2": "^6.22.0",
     "chai": "^4.1.2",
     "eslint": "^4.11.0",
     "eslint-plugin-vue": "beta",

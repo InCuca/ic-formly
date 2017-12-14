@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import Formly from '@/components/ic-formly/ic-formly.vue'
+import Formly from '@/ic-formly/ic-formly.vue'
 
 describe('ic-formly.vue', () => {
+  let Constructor, vm;
   const propsData = {
     value: {
       duck: {
@@ -22,13 +23,13 @@ describe('ic-formly.vue', () => {
     ]
   }
 
-  let Constructor, vm;
-
-  beforeEach(() => {
+  beforeEach(done => {
     Constructor = Vue.extend(Formly);
     vm = new Constructor({
       propsData,
-    }).$mount();
+      mounted: () => done(),
+    });
+    vm.$mount();
   })
 
   afterEach(() => vm.$destroy())
@@ -39,7 +40,7 @@ describe('ic-formly.vue', () => {
       done();
     });
 
-    vm.$nextTick().then(() => vm.submit());
+    vm.submit();
   })
 
   it('should emit `error` when validation errors occurs', done => {
@@ -47,13 +48,12 @@ describe('ic-formly.vue', () => {
     propsData.value.duck.name = ''; // Force error
     vm = new Constructor({
       propsData,
-    }).$mount();
-
+      mounted: () => {
+        vm.submit();
+      }
+    });
     vm.$on('input', console.warn);
     vm.$on('error', () => done());
-
-    vm.$nextTick().then(() => {
-      vm.submit();
-    });
+    vm.$mount();
   });
 })
