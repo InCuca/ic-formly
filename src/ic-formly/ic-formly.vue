@@ -22,6 +22,7 @@ import VueFormly from 'vue-formly'
 import VueFormlyBootstrap from 'vue-formly-bootstrap'
 import {flatten, unflatten} from 'flat'
 
+// FIXME: Cannot parse src/ic-formly/ic-formly.vue: TypeError: _vue2.default.use is not a function
 Vue.use(VueFormly);
 Vue.use(VueFormlyBootstrap);
 

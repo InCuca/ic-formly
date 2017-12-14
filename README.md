@@ -2,7 +2,6 @@
 
 > This component a form with validation and more using only javascript objects
 
-
 # Usage
 
 ## ES6 Modules / CommonJS
@@ -15,35 +14,6 @@ $ npm run build
 import IcFormly from 'dist/ic-formly';
 
 Vue.component('ic-formly', IcFormly);
-
-let duckModel = {
-  duck: {
-    name: 'Charlie',
-    specie: 'Mountain Duck'
-  }
-};
-
-let duckFields = [
-  {
-    key: 'duck.name',
-    type: 'input',
-    required: true
-  }, {
-    key: 'duck.specie',
-    type: 'input',
-    required: true
-  }
-];
-```
-
-```html
-<ic-formly
-      v-model="duckModel"
-      :fields="duckFields"
-      ref="formly"/>
-    <b-button @click="$refs.formly.submit()">
-      Submit
-    </b-button>
 ```
 
 ## UMD

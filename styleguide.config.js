@@ -29,9 +29,12 @@ module.exports = {
   ],
   webpackConfig: {
     module: {
-			loaders,
+      loaders,
 		},
     devtool: 'inline-source-map'
   },
-  serverPort: 6062
+  serverPort: 6062,
+  require: [
+    'bootstrap/dist/css/bootstrap.css'
+  ]
 };
