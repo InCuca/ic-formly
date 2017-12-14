@@ -1,6 +1,7 @@
 # ic-formly
 
-> This component is a form with validation and more using only javascript objects
+> This component a form with validation and more using only javascript objects
+
 
 # Usage
 
@@ -17,7 +18,13 @@ Vue.component('ic-formly', IcFormly);
 ```
 
 ```html
-<ic-formly text="Hello World!"></ic-formly>
+<ic-formly
+      v-model="duckModel"
+      :fields="duckFields"
+      ref="formly"/>
+    <b-button @click="$refs.formly.submit()">
+      Submit
+    </b-button>
 ```
 
 ## UMD
