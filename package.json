@@ -1,6 +1,6 @@
 {
   "name": "ic-formly",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
   "main": "src/ic-formly/ic-formly.vue",
