@@ -21,18 +21,18 @@
 ### With [vue-loader](https://github.com/vuejs/vue-loader) or [vueify](https://github.com/vuejs/vueify)
 
 ```js
-import {{ camelcase name }} from 'ic-formly.vue';
+import IcFormly from 'ic-formly.vue';
 
-Vue.component('ic-formly', {{ camelcase name }});
+Vue.component('ic-formly', IcFormly);
 ```
 
 ### ES6 Modules / CommonJS
 
 ```js
-import {{ camelcase name }} from 'ic-formly/cjs/ic-formly.min.js';
+import IcFormly from 'ic-formly/cjs/ic-formly.min.js';
 import 'ic-formly/cjs/ic-formly.min.css';
 
-Vue.component('ic-formly', {{ camelcase name }});
+Vue.component('ic-formly', IcFormly);
 ```
 
 ### UMD
@@ -45,7 +45,7 @@ Vue.component('ic-formly', {{ camelcase name }});
 <link rel="stylesheet" type="text/css" href="./umd/ic-formly.min.css">
 
 <script type="text/javascript">
-  Vue.component('ic-formly', window.{{ camelcase name }});
+  Vue.component('ic-formly', window.IcFormly);
 </script>
 ```
 
