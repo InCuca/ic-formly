@@ -134,6 +134,12 @@ export default {
       this.$refs.submitBtn.click();
     },
     /**
+     * Programatically validates form
+     */
+    validate() {
+      this.$refs.formlyForm.validate();
+    },
+    /**
      * Programatically reset form
      */
     reset() {
@@ -143,10 +149,13 @@ export default {
      * Create an empty model, based on fields
      * @return {object} the created model
      */
-    createModel
+    createModel,
   },
   created() {
     Vue.$formly.addValidationMessage('required', this.requiredMessage);
+  },
+  mounted() {
+    this.$refs.formlyForm.$el.addEventListener('change', this.validate);
   }
 }
 </script>
