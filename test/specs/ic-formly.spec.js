@@ -56,4 +56,8 @@ describe('ic-formly.vue', () => {
     vm.$on('error', () => done());
     vm.$mount();
   });
+
+  it.skip('should validates when any input changes', () => {
+    // TODO: implement test
+  })
 })
