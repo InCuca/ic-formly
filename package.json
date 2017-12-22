@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
-  "main": "src/ic-formly/ic-formly.vue",
+  "main": "src/index.js",
   "license": "apache 2.0",
   "scripts": {
     "lint": "eslint src/**/*.vue",
