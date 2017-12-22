@@ -155,7 +155,13 @@ export default {
     Vue.$formly.addValidationMessage('required', this.requiredMessage);
   },
   mounted() {
-    this.$refs.formlyForm.$el.addEventListener('change', this.validate);
+    // Listen on each field for changes and validates individually
+    const formly = this.$refs.formlyForm;
+    Object.keys(formly.$refs).forEach(ref => {
+      formly.$refs[ref].$el.addEventListener('change', () => {
+        formly.$refs[ref].validate();
+      });
+    });
   }
 }
 </script>
