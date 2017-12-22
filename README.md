@@ -18,21 +18,10 @@
 
 ## Usage
 
-### With [vue-loader](https://github.com/vuejs/vue-loader) or [vueify](https://github.com/vuejs/vueify)
-
 ```js
-import IcFormly from 'ic-formly.vue';
+import IcFormly from 'ic-formly';
 
-Vue.component('ic-formly', IcFormly);
-```
-
-### ES6 Modules / CommonJS
-
-```js
-import IcFormly from 'ic-formly/cjs/ic-formly.min.js';
-import 'ic-formly/cjs/ic-formly.min.css';
-
-Vue.component('ic-formly', IcFormly);
+Vue.use(IcFormly);
 ```
 
 ### UMD
@@ -42,11 +31,6 @@ Vue.component('ic-formly', IcFormly);
 
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
 <script src="./umd/ic-formly.min.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="./umd/ic-formly.min.css">
-
-<script type="text/javascript">
-  Vue.component('ic-formly', window.IcFormly);
-</script>
 ```
 
 ## Build

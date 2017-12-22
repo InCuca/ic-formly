@@ -1,5 +1,8 @@
 import Vue from 'vue'
-import Formly from '@/ic-formly/ic-formly.vue'
+import Formly from '@'
+import FormlyCmp from '@/ic-formly/ic-formly.vue'
+
+Vue.use(Formly)
 
 describe('ic-formly.vue', () => {
   let Constructor, vm;
@@ -24,7 +27,7 @@ describe('ic-formly.vue', () => {
   }
 
   beforeEach(done => {
-    Constructor = Vue.extend(Formly);
+    Constructor = Vue.extend(FormlyCmp);
     vm = new Constructor({
       propsData,
       mounted: () => done(),

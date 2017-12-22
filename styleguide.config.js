@@ -35,6 +35,7 @@ module.exports = {
   },
   serverPort: 6062,
   require: [
-    'bootstrap/dist/css/bootstrap.css'
+    'bootstrap/dist/css/bootstrap.css',
+    './boot_doc',
   ]
 };
