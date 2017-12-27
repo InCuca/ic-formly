@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import {flatten, unflatten} from 'flat'
 
 function createModel() {
@@ -53,13 +52,6 @@ export default {
       type: Array,
       required: true
     },
-    /**
-     * The required error message
-     */
-    requiredMessage: {
-      type: String,
-      default: 'Required field'
-    }
   },
   computed: {
     computedValue: {
@@ -77,7 +69,6 @@ export default {
   data: () => ({
     emptyModel: createModel,
     flattenForm: {},
-    $formly: Vue.$formly,
   }),
   methods: {
     onFormSubmission() {
@@ -144,9 +135,6 @@ export default {
      * @return {object} the created model
      */
     createModel,
-  },
-  created() {
-    Vue.$formly.addValidationMessage('required', this.requiredMessage);
   },
   mounted() {
     // Listen on each field for changes and validates individually
