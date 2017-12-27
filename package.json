@@ -3,11 +3,11 @@
   "version": "1.0.2",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
-  "main": "src/index.js",
+  "main": "dist/ic-formly.min.js",
   "license": "apache 2.0",
   "scripts": {
     "lint": "eslint src/**/*.vue",
-    "build": "poi build --format cjs --dist cjs; poi build --format umd --dist umd",
+    "build": "poi build --format cjs --dist dist",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server",
     "test": "poi test",
