@@ -28,7 +28,7 @@ function createModel() {
       o[f.key] = "";
       return o;
     }, {});
-  return unflatten(flatted);
+  return unflatten(flatted, {overwrite: true});
 }
 
 export default {
@@ -93,7 +93,7 @@ export default {
            * @event error
            * @type {object} An object which will hold the current state of the form. This will be populated by Vue Formly.
            */
-          this.$emit('error', unflatten(this.flattenForm));
+          this.$emit('error', unflatten(this.flattenForm, {overwrite: true}));
         } else {
           /**
           * Input event occurs when form is submitted without
@@ -101,7 +101,7 @@ export default {
           * @event input
           * @type {object} Data model
           */
-          this.$emit('input', unflatten(this.flattenModel));
+          this.$emit('input', unflatten(this.flattenModel, {overwrite: true}));
 
           // resets computedValue after submission
           this.reset();
