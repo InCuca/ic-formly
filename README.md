@@ -24,11 +24,42 @@ import IcFormly from 'ic-formly';
 Vue.use(IcFormly);
 ```
 
+```jsx
+let duckModel = {
+  duck: {
+    name: 'Charlie',
+    specie: 'Mountain Duck'
+  }
+};
+
+let duckFields = [
+  {
+    key: 'duck.name',
+    type: 'input',
+    required: true
+  }, {
+    key: 'duck.specie',
+    type: 'input',
+    required: true
+  }
+];
+
+<div>
+  <pre><code>{{JSON.stringify(duckModel)}}</code></pre>
+  <ic-formly
+    ref="formly"
+    v-model="duckModel"
+    :fields="duckFields"/>
+  <button @click="$refs.formly.submit()">
+    Submit
+  </button>
+</div>
+```
+
+
 ### UMD
 
 ```html
-<ic-formly text="Hello World!"></ic-formly>
-
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
 <script src="./umd/ic-formly.min.js" charset="utf-8"></script>
 ```
