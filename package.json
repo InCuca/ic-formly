@@ -7,7 +7,7 @@
   "license": "apache 2.0",
   "scripts": {
     "lint": "eslint src/**/*.vue",
-    "build": "poi build --format cjs --dist dist",
+    "build": "poi build --format cjs --dist dist; poi build --format umd --dist dist/umd",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server",
     "test": "poi test",

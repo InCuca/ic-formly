@@ -1,6 +1,6 @@
 # ic-formly
 
-> This component a form with validation and more using only javascript objects
+> This component is a form with validation and more using only javascript objects
 
 ## Installation
 
@@ -64,7 +64,7 @@ let duckFields = [
 
 ## Build
 
-Build configuration is located in the `poi.config.js` file, to build just run: `npm run build`, it will build to `cjs` and `umd` directories.
+Build configuration is located in the `poi.config.js` file, to build just run: `npm run build`, it will build to `dist` directory.
 
 ## Tests
 
