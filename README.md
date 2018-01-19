@@ -18,13 +18,11 @@
 
 ## Usage
 
-```js
+```jsx
 import IcFormly from 'ic-formly';
 
 Vue.use(IcFormly);
-```
 
-```jsx
 let duckModel = {
   duck: {
     name: 'Charlie',
