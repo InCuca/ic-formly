@@ -12,11 +12,13 @@
 
 `npm i --save ic-formly`
 
-## Demo and Docs
+## Docs
 
 `npm run serve`
 
 ## Usage
+
+[Demo](https://jsfiddle.net/ppsgftLg/)
 
 ```jsx
 import IcFormly from 'ic-formly';
