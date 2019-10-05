@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import Formly from '@'
-import FormlyCmp from '@/ic-formly/ic-formly.vue'
+import Formly from '../../src'
+import FormlyCmp from '../../src/ic-formly/ic-formly.vue'
 
 Vue.use(Formly)
 
