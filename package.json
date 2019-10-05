@@ -1,6 +1,6 @@
 {
   "name": "ic-formly",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "This component is a form with validation and more using only javascript objects",
   "author": "Walker Leite <walker@incuca.com.br>",
   "main": "dist/ic-formly.min.js",
